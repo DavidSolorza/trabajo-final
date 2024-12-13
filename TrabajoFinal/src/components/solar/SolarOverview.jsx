@@ -5,64 +5,65 @@ export function SolarOverview() {
   return (
     <section className="py-16 bg-[#edeef3]">
       <div className="container mx-auto px-4">
+        
         <h1 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
           Solar Energy: Powering a Sustainable Future
         </h1>
-        <p className="text-[#4e518b]">
+
+        <p className="text-[#4e518b] mb-8">
           Las energías renovables provienen de fuentes naturales que se reponen
-          más rápido de lo que se consumen, como la luz solar, el viento, el
-          agua y la biomasa. A diferencia de los combustibles fósiles, que
-          tardan millones de años en formarse y generan altas emisiones de gases
-          de efecto invernadero, las renovables producen menos contaminación y
-          son clave para combatir el cambio climático. Además, son más
-          económicas y generan más empleos. <br />
-          Principales Tipos de Energías Renovables: <br />
-          <h3 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-            Energía Solar
-          </h3>
-          <br />
-          Generada por paneles fotovoltaicos o sistemas de concentración solar.
-          Es la fuente más abundante, accesible incluso con cielos nublados, y
-          una de las más baratas de producir.
-          <br />
-          <h3 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-            Energía Eólica
-          </h3>
-          <br />
-          Aprovecha la energía del viento mediante turbinas en tierra o mar.
-          Tiene un gran potencial técnico para satisfacer la demanda energética
-          global. <br />
-          <h3 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-            Energía Geotérmica
-          </h3>{" "}
-          <br />
-          Utiliza el calor del interior de la Tierra para generar electricidad o
-          calefacción. Es una tecnología madura y confiable con más de 100 años
-          de uso. Energía Hidroeléctrica: Generada por el movimiento del agua,
-          ya sea en embalses o ríos. Es la mayor fuente de energía renovable
-          eléctrica, aunque su infraestructura puede alterar ecosistemas. <br />
-          <h3 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-            Energía Hidroeléctrica
-          </h3>
-          <br />
-          Emplea tecnologías experimentales para aprovechar olas, mareas y
-          gradientes térmicos. Su potencial excede las necesidades energéticas
-          actuales, pero aún está en desarrollo.
-          <h3 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-            Bioenergía
-          </h3>
-          Proviene de la biomasa (madera, residuos agrícolas, cultivos). Su
-          quema emite menos gases que los combustibles fósiles, aunque debe
-          usarse con precaución para evitar deforestación y daños ambientales.
-          Las energías renovables son esenciales para la transición energética,
-          ayudando a reducir la dependencia de los combustibles fósiles y
-          mitigar los efectos del cambio climático.
-          <br />
-        </p>
-        <br />
-        <br />
-        <br />
-        <br />
+          más rápido de lo que se consumen, como la luz solar, el viento, el agua
+          y la biomasa. A diferencia de los combustibles fósiles, que tardan
+          millones de años en formarse y generan altas emisiones de gases de
+          efecto invernadero, las renovables producen menos contaminación y son
+          clave para combatir el cambio climático. Además, son más económicas y
+          generan más empleos.
+        </p>        
+
+        <h2 className="text-2xl font-bold text-[#4e518b] mb-6 text-center">
+          Renewable Energy Sources
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {[
+            {
+              title: "Energía Solar",
+              description:
+                "Generada por paneles fotovoltaicos o sistemas de concentración solar. Es la fuente más abundante, accesible incluso con cielos nublados, y una de las más baratas de producir.",
+            },
+            {
+              title: "Energía Eólica",
+              description:
+                "Aprovecha la energía del viento mediante turbinas en tierra o mar. Tiene un gran potencial técnico para satisfacer la demanda energética global.",
+            },
+            {
+              title: "Energía Geotérmica",
+              description:
+                "Utiliza el calor del interior de la Tierra para generar electricidad o calefacción. Es una tecnología madura y confiable con más de 100 años de uso.",
+            },
+            {
+              title: "Energía Hidroeléctrica",
+              description:
+                "Generada por el movimiento del agua, ya sea en embalses o ríos. Es la mayor fuente de energía renovable eléctrica, aunque su infraestructura puede alterar ecosistemas.",
+            },
+            {
+              title: "Bioenergía",
+              description:
+                "Proviene de la biomasa (madera, residuos agrícolas, cultivos). Su quema emite menos gases que los combustibles fósiles, aunque debe usarse con precaución para evitar deforestación y daños ambientales.",
+            },
+          ].map(({ title, description }) => (
+            <div
+              key={title}
+              className="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+            >
+              <h3 className="text-xl font-semibold mb-3 text-[#4e518b] text-center">
+                {title}
+              </h3>
+              <p className="text-[#4e518b]">{description}</p>
+            </div>
+          ))}
+        </div>
+
         <br />
         <br />
 
