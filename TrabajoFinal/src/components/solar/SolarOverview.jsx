@@ -3,11 +3,12 @@ import { Sun, Leaf, DollarSign } from "lucide-react";
 
 export function SolarOverview() {
   return (
+  
     <section className="py-16 bg-[#edeef3]">
       <div className="container mx-auto px-4">
         
         <h1 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-        Energía solar: impulsando un futuro sostenible
+        Energías renovables: impulsando un futuro sostenible
         </h1>
 
         <p className="text-[#4e518b] mb-8">
@@ -63,6 +64,7 @@ export function SolarOverview() {
               </div>
             ))}
           </div>
+          
 
         <br />
         <br />

@@ -26,7 +26,7 @@ export function EnergyCalculator() {
             <div className="space-y-6">
               <div>
                 <label htmlFor="consumption" className="block text-sm font-medium text-[#7174a2] mb-2">
-                  Monthly Electricity Consumption (kWh)
+                  Consumo eléctrico mensual (kWh)
                 </label>
                 <input
                   type="number"
@@ -34,7 +34,7 @@ export function EnergyCalculator() {
                   value={consumption}
                   onChange={(e) => setConsumption(e.target.value)}
                   className="w-full px-4 py-2 border border-[#8385ae] rounded-lg focus:ring-2 focus:ring-[#4e518b] focus:border-transparent"
-                  placeholder="Enter your monthly consumption"
+                  placeholder="Ingresa tu consumo mensual"
                 />
               </div>
 
@@ -43,18 +43,18 @@ export function EnergyCalculator() {
                 className="w-full bg-[#4e518b] text-white py-3 rounded-lg hover:bg-[#7174a2] transition-colors flex items-center justify-center gap-2"
               >
                 <Zap className="h-5 w-5" />
-                Calculate Renewable Share
+                Calcular la cuota de energía renovable
               </button>
 
               {result !== null && (
                 <div className="mt-6 p-4 bg-[#cacbdc] rounded-lg">
-                  <h3 className="text-lg font-semibold text-[#4e518b] mb-2">Results</h3>
+                  <h3 className="text-lg font-semibold text-[#4e518b] mb-2">Resultados</h3>
                   <p className="text-[#606297]">
-                    Estimated renewable energy contribution:{' '}
+                  Contribución estimada de energía renovable:{' '}
                     <span className="font-bold text-[#4e518b]">{result.toFixed(2)} kWh</span>
                   </p>
                   <p className="text-sm text-[#8385ae] mt-2">
-                    Based on current global renewable energy production data.
+                  Basado en datos actuales de producción mundial de energía renovable.
                   </p>
                 </div>
               )}
