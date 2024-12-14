@@ -141,14 +141,14 @@ export function SolarOverview() {
         <div className="grid md:grid-cols-2 gap-8 text-justify">
             {[
               {
-                title: "Energías renovanles",
+                title: "Energías renovables",
                 description:
                   "Las energías renovables provienen de fuentes naturales que no se agotan, como el sol, el viento y el agua, y tienen un menor impacto ambiental. Son sostenibles y esenciales para combatir el cambio climático.",
               },
               {
                 title: "Energías no renovables",
                 description:
-                  " las energías no renovables provienen de fuentes limitadas, como el petróleo, el gas y el carbón. Su uso genera más contaminación y contribuye al calentamiento global, además de tener un suministro finito.",
+                  "Las energías no renovables provienen de fuentes limitadas, como el petróleo, el gas y el carbón. Su uso genera más contaminación y contribuye al calentamiento global, además de tener un suministro finito.",
               },
             
             ].map(({ title, description }) => (
