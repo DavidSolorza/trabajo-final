@@ -3,7 +3,7 @@ import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Layout from "./components/layout/Layout";
-import  Dashboard  from "./pages/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
 import Overview from "./pages/OverView";
 import Calculator from "./pages/Calculator";
 import CsvToJsonAndTableWithAdvancedFilters from "./components/table/CsvToJsonAndTableWithFilters";
