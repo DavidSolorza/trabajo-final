@@ -20,7 +20,7 @@ export function EnergyCalculator() {
           <div className="bg-[#ffffff] rounded-2xl shadow-xl p-8">
             <div className="flex items-center gap-3 mb-6">
               <Calculator className="h-8 w-8 text-[#4e518b]" />
-              <h2 className="text-3xl font-bold text-[#606297]">Energy Calculator</h2>
+              <h2 className="text-3xl font-bold text-[#606297]">Calculadora de energía</h2>
             </div>
 
             <div className="space-y-6">

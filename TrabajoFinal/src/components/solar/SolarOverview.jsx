@@ -3,12 +3,11 @@ import { Sun, Leaf, DollarSign } from "lucide-react";
 
 export function SolarOverview() {
   return (
-    <div class="container-fluid">
     <section className="py-16 bg-[#edeef3]">
       <div className="container mx-auto px-4">
         
         <h1 className="text-4xl font-bold text-[#4e518b] mb-8 text-center">
-          Solar Energy: Powering a Sustainable Future
+        Energía solar: impulsando un futuro sostenible
         </h1>
 
         <p className="text-[#4e518b] mb-8">
@@ -22,7 +21,7 @@ export function SolarOverview() {
         </p>        
 
         <h2 className="text-2xl font-bold text-[#4e518b] mb-6 text-center">
-          Renewable Energy Sources
+        Fuentes de energía renovable
         </h2>
         
           <div className="grid md:grid-cols-2 gap-8 text-justify">
@@ -72,7 +71,7 @@ export function SolarOverview() {
           <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl shadow-md">
             <Sun className="h-12 w-12 text-yellow-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-[#4e518b]">
-              How It Works
+              Cómo funciona
             </h3>
             <p className="text-[#4e518b]">
               Las energías renovables transforman recursos naturales como el
@@ -85,7 +84,7 @@ export function SolarOverview() {
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl shadow-md">
             <Leaf className="h-12 w-12 text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-[#4e518b]">
-              Environmental Impact
+            Impacto ambiental
             </h3>
             <p className="text-[#4e518b]">
               Producen energía con bajas emisiones de gases contaminantes,
@@ -97,7 +96,7 @@ export function SolarOverview() {
           <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-md">
             <DollarSign className="h-12 w-12 text-blue-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-[#4e518b]">
-              Economic Benefits
+              Beneficios económicos
             </h3>
             <p className="text-[#4e518b]">
               Impulsan empleos, reducen costos a largo plazo y disminuyen la
@@ -109,24 +108,24 @@ export function SolarOverview() {
 
         <div className="bg-[#edeef3] rounded-2xl p-8 shadow-lg">
           <h3 className="text-2xl font-bold mb-6 text-[#4e518b]">
-            Key Statistics
+          Estadísticas clave
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-4 rounded-lg shadow">
               <p className="text-3xl font-bold text-yellow-500">1,000+ GW</p>
-              <p className="text-[#4e518b]">Global Solar Capacity</p>
+              <p className="text-[#4e518b]">Capacidad solar global</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow">
               <p className="text-3xl font-bold text-yellow-500">3%</p>
-              <p className="text-[#4e518b]">Global Electricity Share</p>
+              <p className="text-[#4e518b]">Participación mundial en la electricidad</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow">
               <p className="text-3xl font-bold text-yellow-500">70%</p>
-              <p className="text-[#4e518b]">Cost Reduction Since 2010</p>
+              <p className="text-[#4e518b]">Reducción de costes desde 2010</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow">
               <p className="text-3xl font-bold text-yellow-500">25+ Years</p>
-              <p className="text-[#4e518b]">Average Panel Lifespan</p>
+              <p className="text-[#4e518b]">Vida útil promedio del panel</p>
             </div>
           </div>
         </div>
@@ -167,6 +166,5 @@ export function SolarOverview() {
           <br/>
       </div>
     </section>
-    </div>
   );
 }
