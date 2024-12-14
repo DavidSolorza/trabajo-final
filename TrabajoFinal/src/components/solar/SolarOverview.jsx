@@ -3,6 +3,7 @@ import { Sun, Leaf, DollarSign } from "lucide-react";
 
 export function SolarOverview() {
   return (
+    <div class="container-fluid">
     <section className="py-16 bg-[#edeef3]">
       <div className="container mx-auto px-4">
         
@@ -23,51 +24,51 @@ export function SolarOverview() {
         <h2 className="text-2xl font-bold text-[#4e518b] mb-6 text-center">
           Renewable Energy Sources
         </h2>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {[
-            {
-              title: "Energía Solar",
-              description:
-                "Generada por paneles fotovoltaicos o sistemas de concentración solar. Es la fuente más abundante, accesible incluso con cielos nublados, y una de las más baratas de producir.",
-            },
-            {
-              title: "Energía Eólica",
-              description:
-                "Aprovecha la energía del viento mediante turbinas en tierra o mar. Tiene un gran potencial técnico para satisfacer la demanda energética global.",
-            },
-            {
-              title: "Energía Geotérmica",
-              description:
-                "Utiliza el calor del interior de la Tierra para generar electricidad o calefacción. Es una tecnología madura y confiable con más de 100 años de uso.",
-            },
-            {
-              title: "Energía Hidroeléctrica",
-              description:
-                "Generada por el movimiento del agua, ya sea en embalses o ríos. Es la mayor fuente de energía renovable eléctrica, aunque su infraestructura puede alterar ecosistemas.",
-            },
-            {
-              title: "Bioenergía",
-              description:
-                "Proviene de la biomasa (madera, residuos agrícolas, cultivos). Su quema emite menos gases que los combustibles fósiles, aunque debe usarse con precaución para evitar deforestación y daños ambientales.",
-            },
-          ].map(({ title, description }) => (
-            <div
-              key={title}
-              className="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
-            >
-              <h3 className="text-xl font-semibold mb-3 text-[#4e518b] text-center">
-                {title}
-              </h3>
-              <p className="text-[#4e518b]">{description}</p>
-            </div>
-          ))}
-        </div>
+        
+          <div className="grid md:grid-cols-2 gap-8 text-justify">
+            {[
+              {
+                title: "Energía Solar",
+                description:
+                  "Generada por paneles fotovoltaicos o sistemas de concentración solar. Es la fuente más abundante, accesible incluso con cielos nublados, y una de las más baratas de producir.",
+              },
+              {
+                title: "Energía Eólica",
+                description:
+                  "Aprovecha la energía del viento mediante turbinas en tierra o mar. Tiene un gran potencial técnico para satisfacer la demanda energética global.",
+              },
+              {
+                title: "Energía Geotérmica",
+                description:
+                  "Utiliza el calor del interior de la Tierra para generar electricidad o calefacción. Es una tecnología madura y confiable con más de 100 años de uso.",
+              },
+              {
+                title: "Energía Hidroeléctrica",
+                description:
+                  "Generada por el movimiento del agua, ya sea en embalses o ríos. Es la mayor fuente de energía renovable eléctrica, aunque su infraestructura puede alterar ecosistemas.",
+              },
+              {
+                title: "Bioenergía",
+                description:
+                  "Proviene de la biomasa (madera, residuos agrícolas, cultivos). Su quema emite menos gases que los combustibles fósiles, aunque debe usarse con precaución para evitar deforestación y daños ambientales.",
+              },
+            ].map(({ title, description }) => (
+              <div
+                key={title}
+                className="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-[#4e518b] text-center">
+                  {title}
+                </h3>
+                <p className="text-[#4e518b]">{description}</p>
+              </div>
+            ))}
+          </div>
 
         <br />
         <br />
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 text-justify">
           <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl shadow-md">
             <Sun className="h-12 w-12 text-yellow-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-[#4e518b]">
@@ -129,7 +130,43 @@ export function SolarOverview() {
             </div>
           </div>
         </div>
+
+       <br/>
+       <br/>
+
+       <h2 className="text-2xl font-bold text-[#4e518b] mb-6 text-center">
+          Energías renovables vs no renovables
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8 text-justify">
+            {[
+              {
+                title: "Energías renovanles",
+                description:
+                  "Las energías renovables provienen de fuentes naturales que no se agotan, como el sol, el viento y el agua, y tienen un menor impacto ambiental. Son sostenibles y esenciales para combatir el cambio climático.",
+              },
+              {
+                title: "Energías no renovables",
+                description:
+                  " las energías no renovables provienen de fuentes limitadas, como el petróleo, el gas y el carbón. Su uso genera más contaminación y contribuye al calentamiento global, además de tener un suministro finito.",
+              },
+            
+            ].map(({ title, description }) => (
+              <div
+                key={title}
+                className="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-[#4e518b] text-center">
+                  {title}
+                </h3>
+                <p className="text-[#4e518b]">{description}</p>
+              </div>
+            ))}
+          </div>
+
+          <br/>
       </div>
     </section>
+    </div>
   );
 }
