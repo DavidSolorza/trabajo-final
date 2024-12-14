@@ -14,6 +14,12 @@ export default function Header2() {
           <nav>
             <ul className="flex space-x-6 text-xl text-[#edeef3] font-bold">
             <li className="hover:text-[#b8b9d1]">
+                {/* Opción 1: Overview */}
+                <Link to="/overview">
+                  Overview
+                </Link>
+              </li>
+            <li className="hover:text-[#b8b9d1]">
                 {/* Opcion 0 : table */}
                 <Link
                  to="/table"
@@ -22,12 +28,7 @@ export default function Header2() {
                 </Link>
                 {/* Overview */}
               </li>
-              <li className="hover:text-[#b8b9d1]">
-                {/* Opción 1: Overview */}
-                <Link to="/overview">
-                  Overview
-                </Link>
-              </li>
+              
 
               <li className="hover:text-[#b8b9d1]">
                 {/* Opción 2: Calculator */}
