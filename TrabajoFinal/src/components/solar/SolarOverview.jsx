@@ -24,7 +24,7 @@ export function SolarOverview() {
         Fuentes de energía renovable
         </h2>
         
-          <div className="grid md:grid-cols-2 gap-8 text-justify">
+          <div className="grid md:grid-cols-3 gap-8 text-justify">
             {[
               {
                 title: "Energía Solar",
